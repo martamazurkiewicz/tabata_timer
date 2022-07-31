@@ -90,8 +90,55 @@ class _TabataScreen extends State<TabataScreen> {
                   width: MediaQuery.of(context).size.width,
                   child: Card(
                     color: Colors.red[200],
-                    child: Column(
-                      children: const [],
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        children: [
+                          const Expanded(
+                            flex: 1,
+                            child: SizedBox(
+                              child: Text(
+                                'Exercise sth',
+                                style: TextStyle(
+                                    fontSize: 25.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: SizedBox(
+                              child: Icon(
+                                Icons.sports_gymnastics_outlined,
+                                color: Colors.grey[900],
+                                size: 60.0,
+                              ),
+                            ),
+                          ),
+                          const Expanded(
+                            flex: 6,
+                            child: SizedBox(
+                              child: Text(
+                                '20 s',
+                                style: TextStyle(
+                                    fontSize: 80.0,
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ),
+                          ),
+                          const Expanded(
+                            flex: 2,
+                            child: SizedBox(
+                              child: Text(
+                                'Description',
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
