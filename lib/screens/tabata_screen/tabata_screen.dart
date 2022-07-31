@@ -159,8 +159,8 @@ class _TabataScreen extends State<TabataScreen> {
                             child: Container(
                               alignment: Alignment.centerLeft,
                               child: const Icon(
-                                Icons.fast_rewind_outlined,
-                                size: 40.0,
+                                Icons.fast_rewind,
+                                size: 45.0,
                               ),
                             ),
                           ),
@@ -170,12 +170,12 @@ class _TabataScreen extends State<TabataScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
                                 Icon(
-                                  Icons.play_arrow_outlined,
-                                  size: 45.0,
+                                  Icons.play_arrow,
+                                  size: 50.0,
                                 ),
                                 Icon(
-                                  Icons.pause_outlined,
-                                  size: 45.0,
+                                  Icons.pause,
+                                  size: 50.0,
                                 ),
                               ],
                             ),
@@ -185,8 +185,8 @@ class _TabataScreen extends State<TabataScreen> {
                             child: Container(
                               alignment: Alignment.centerRight,
                               child: const Icon(
-                                Icons.fast_forward_outlined,
-                                size: 40.0,
+                                Icons.fast_forward,
+                                size: 45.0,
                               ),
                             ),
                           ),
