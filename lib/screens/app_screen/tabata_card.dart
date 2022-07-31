@@ -42,15 +42,34 @@ class TabataCard extends StatelessWidget {
               ],
             ),
           ),
-          trailing: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              Icon(
-                Icons.more_vert,
-                size: 30,
+          trailing: DropdownButton(
+            elevation: 8,
+            icon: const Icon(
+              Icons.more_vert,
+              size: 30,
+            ),
+            itemHeight: 50.0,
+            items: [
+              DropdownMenuItem(
+                value: 1,
+                child: Row(
+                  children: const [
+                    Icon(Icons.edit),
+                    Text('Edit'),
+                  ],
+                ),
+              ),
+              DropdownMenuItem(
+                value: 2,
+                child: Row(
+                  children: const [
+                    Icon(Icons.delete),
+                    Text('Delete'),
+                  ],
+                ),
               ),
             ],
+            onChanged: (int? value) {},
           ),
           onTap: () => {
             Navigator.push(
@@ -60,7 +79,6 @@ class TabataCard extends StatelessWidget {
               ),
             ),
           },
-          onLongPress: () => {},
         ),
       ),
     );
