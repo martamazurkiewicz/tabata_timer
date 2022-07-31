@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tabata_timer/screens/tabata_screen/tabata_screen.dart';
 
 class TabataCard extends StatelessWidget {
   const TabataCard({Key? key}) : super(key: key);
@@ -51,7 +52,14 @@ class TabataCard extends StatelessWidget {
               ),
             ],
           ),
-          onTap: () => {},
+          onTap: () => {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const TabataScreen(),
+              ),
+            ),
+          },
           onLongPress: () => {},
         ),
       ),
