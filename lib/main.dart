@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabata_timer/screens/app_screen.dart';
+import 'package:tabata_timer/screens/app_screen/app_screen.dart';
 
 void main() {
   runApp(const TabataTimer());
