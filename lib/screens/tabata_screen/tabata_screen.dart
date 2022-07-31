@@ -41,7 +41,7 @@ class _TabataScreen extends State<TabataScreen> {
                                       size: 60.0,
                                     ),
                                     const Text(
-                                      '15:12',
+                                      '00:15:12',
                                       style: TextStyle(
                                           fontSize: 30.0,
                                           fontWeight: FontWeight.w600),
@@ -95,18 +95,21 @@ class _TabataScreen extends State<TabataScreen> {
                       child: Column(
                         children: [
                           const Expanded(
-                            flex: 1,
+                            flex: 2,
                             child: SizedBox(
                               child: Text(
-                                'Exercise sth',
+                                'Testing line - breaking - exercise name to set here and some more words',
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.clip,
+                                maxLines: 2,
                                 style: TextStyle(
                                     fontSize: 25.0,
-                                    fontWeight: FontWeight.w500),
+                                    fontWeight: FontWeight.w700),
                               ),
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 0,
                             child: SizedBox(
                               child: Icon(
                                 Icons.sports_gymnastics_outlined,
@@ -116,23 +119,26 @@ class _TabataScreen extends State<TabataScreen> {
                             ),
                           ),
                           const Expanded(
-                            flex: 6,
+                            flex: 4,
                             child: SizedBox(
                               child: Text(
-                                '20 s',
+                                '00:20',
                                 style: TextStyle(
-                                    fontSize: 80.0,
-                                    fontWeight: FontWeight.w400),
+                                    fontSize: 90.0,
+                                    fontWeight: FontWeight.w500),
                               ),
                             ),
                           ),
                           const Expanded(
-                            flex: 2,
+                            flex: 4,
                             child: SizedBox(
                               child: Text(
-                                'Description',
+                                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic',
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.clip,
+                                maxLines: 6,
                                 style: TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 18.0,
                                     fontWeight: FontWeight.w500),
                               ),
                             ),
