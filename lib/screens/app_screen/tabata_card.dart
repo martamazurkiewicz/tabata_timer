@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tabata_timer/screens/edit_screen/edit_screen.dart';
 import 'package:tabata_timer/screens/tabata_screen/tabata_screen.dart';
 
 class TabataCard extends StatelessWidget {
@@ -48,24 +49,37 @@ class TabataCard extends StatelessWidget {
               Icons.more_vert,
               size: 30,
             ),
-            itemHeight: 50.0,
+            itemHeight: 60.0,
             items: [
               DropdownMenuItem(
                 value: 1,
-                child: Row(
-                  children: const [
-                    Icon(Icons.edit),
-                    Text('Edit'),
-                  ],
+                child: OutlinedButton(
+                  child: Row(
+                    children: const [
+                      Icon(Icons.edit),
+                      Text('Edit'),
+                    ],
+                  ),
+                  onPressed: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const EditScreen(),
+                      ),
+                    ),
+                  },
                 ),
               ),
               DropdownMenuItem(
                 value: 2,
-                child: Row(
-                  children: const [
-                    Icon(Icons.delete),
-                    Text('Delete'),
-                  ],
+                child: OutlinedButton(
+                  child: Row(
+                    children: const [
+                      Icon(Icons.delete),
+                      Text('Delete'),
+                    ],
+                  ),
+                  onPressed: () => {},
                 ),
               ),
             ],
