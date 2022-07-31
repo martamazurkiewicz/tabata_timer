@@ -149,8 +149,49 @@ class _TabataScreen extends State<TabataScreen> {
                   width: MediaQuery.of(context).size.width,
                   child: Card(
                     color: Colors.red,
-                    child: Column(
-                      children: const [],
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 15.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              alignment: Alignment.centerLeft,
+                              child: const Icon(
+                                Icons.fast_rewind_outlined,
+                                size: 40.0,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(
+                                  Icons.play_arrow_outlined,
+                                  size: 45.0,
+                                ),
+                                Icon(
+                                  Icons.pause_outlined,
+                                  size: 45.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              alignment: Alignment.centerRight,
+                              child: const Icon(
+                                Icons.fast_forward_outlined,
+                                size: 40.0,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
